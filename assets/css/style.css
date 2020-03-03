@@ -35,6 +35,41 @@ h2 {
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
+#gifContainer {
+    margin: 15px;
+    padding: 5px;
+    border: 1.5px solid #3A005A;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+
+#searchbox {
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    border: 3px solid #582A72;
+    border-radius: 5px;
+    height:36px;
+    font-size: medium;
+
+}
+
+#gifsearch {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #582A72;
+    background: #582A72;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+}
+
 button {
     padding: 10px;
     background: #582A72;
@@ -55,3 +90,44 @@ button {
     text-align: center;
     border-radius: 5px;
 }
+
+.gifImg {
+    margin: 5px;
+}
+
+/* Large screens, Desktops */
+@media screen and (max-width: 980px) {
+
+}
+
+/* Medium screens, tablets */
+@media screen and (max-width: 768px){
+
+}
+
+/* Small screens, phones */
+@media screen and (max-width: 640px){
+    h1 {
+        margin: 0;
+        padding: 20px 10px 20px 10px;
+    }
+
+    header {
+        display: inline;
+    }
+
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #gifcontainer {
+        display: inline;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+
