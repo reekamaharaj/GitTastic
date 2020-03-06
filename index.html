@@ -3,25 +3,27 @@
 
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <title>Giftastic</title>
     </head>
 
     <body>
 
-        <header>
-
-            <h1>Giftastic</h1>
-
-        </header>
+        <nav>
+            <ul>
+                <li id="left">Giftastic</li>
+                <a href="#" class="link" onClick="clicked(anime)"><li id="right">Anime</li></a>
+                <a href="#" class="link" onClick="clicked(cartoons)"><li id="right">Cartoons</li></a>
+                <a href="#" class="link" onClick="clicked(animals)"><li id="right">Animals</li></a>
+            </ul>
+        </nav>
 
         <div class="container">
 
             <form>
-
                 <input text="text" id="searchbox" placeholder="Add something">
                 <input id="gifsearch" type="submit" value="Add">
-
             </form>
 
             <div id="buttons"> </div>
@@ -35,3 +37,11 @@
     </body>
 
 </html>
+
+<!-- <nav class="navbar">
+    <p class="title">Giftastic</p>
+    <div class="navlink" onClick="anime">Anime</button>
+    <div class="navlink" onClick="kirby">Cartoons</button>
+    <div class="navlink" onClick="animals">Animals</button>
+    <a class="menuicon">≡</a>
+</nav> -->
