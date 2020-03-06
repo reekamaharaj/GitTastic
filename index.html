@@ -3,8 +3,11 @@
 
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">   
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="https://kit.fontawesome.com/cd4396f3c5.js" crossorigin="anonymous"></script>
         <title>Giftastic</title>
     </head>
 
@@ -12,7 +15,7 @@
 
         <nav>
             <ul>
-                <li id="left">Giftastic</li>
+                <li id="left">Giftastic</li> 
                 <a href="#" class="link" onClick="clicked(anime)"><li id="right">Anime</li></a>
                 <a href="#" class="link" onClick="clicked(cartoons)"><li id="right">Cartoons</li></a>
                 <a href="#" class="link" onClick="clicked(animals)"><li id="right">Animals</li></a>
@@ -22,8 +25,8 @@
         <div class="container">
 
             <form>
-                <input text="text" id="searchbox" placeholder="Add something">
-                <input id="gifsearch" type="submit" value="Add">
+                <input text="text" id="searchBox" placeholder="Add something">
+                <input id="gifSearch" type="submit" value="Add">
             </form>
 
             <div id="buttons"> </div>
@@ -37,11 +40,3 @@
     </body>
 
 </html>
-
-<!-- <nav class="navbar">
-    <p class="title">Giftastic</p>
-    <div class="navlink" onClick="anime">Anime</button>
-    <div class="navlink" onClick="kirby">Cartoons</button>
-    <div class="navlink" onClick="animals">Animals</button>
-    <a class="menuicon">≡</a>
-</nav> -->

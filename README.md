@@ -4,12 +4,10 @@ Used the GIPHY API to make a dynamic web page to populate gifs. User can add but
 
 ### Bonus Goals
 
-1. Ensure your app is fully mobile responsive.
-
-3. List additional metadata (title, tags, etc) for each gif in a clean and readable format.
-
 4. Integrate this search with additional APIs such as OMDB, or Bands in Town. Be creative and build something you are proud to showcase in your portfolio
 
 5. Allow users to add their favorite gifs to a `favorites` section.
    * This should persist even when they select or add a new topic.
    * If you are looking for a major challenge, look into making this section persist even when the page is reloaded(via localStorage or cookies).
+
+   

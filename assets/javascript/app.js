@@ -1,15 +1,14 @@
+$(document).ready(function(){
+    
+})
+
+
+
 let anime = ["Pokemon", "Cowboy Bebop", "Naruto"];
 let cartoons = ["Scooby Doo", "CatDog", "Kim Possible"];
 let animals = ["Cat", "Dog", "Pig"];
 
 let topic = ["Cat", "Dog", "Pig"];
-
-function clicked(topicChange){
-    topic = topicChange;
-    addButton();
-}
-
-addButton();
 
 function addButton() {
     $("#buttons").empty();
@@ -20,6 +19,8 @@ function addButton() {
         a.text(topic[i]);
         $("#buttons").append(a);
     }
+
+    
     $("button").on("click", function () {
         let gif = $(this).attr("data-name");
         let queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
@@ -33,8 +34,9 @@ function addButton() {
                 console.log(response);
                 for (let i = 0; i < results.length; i++) {
                     let gifDiv = $("<div>");
+                    let title = results[i].title;
                     let rating = results[i].rating;
-                    let p = $("<p>").text("Rating: " + rating);
+                    let p = $("<p>").html('<br><h3>Title: ' + title + '</h3><h4>Rating: ' + rating + '</h5><span class="star' + i + '"> <span class="solidstar" style="display:none"><i class="fas fa-star"></i></span> <span class="regstar" style="display:inline-block"><i class="far fa-star"></i></span> </span>');
                     let gifImage = $("<img>");
                     gifImage.attr("src", results[i].images.fixed_height_still.url);
                     gifImage.attr("data-still", results[i].images.fixed_height_still.url);
@@ -62,12 +64,29 @@ function addButton() {
     });
 }
 
-$("#gifsearch").on("click", function (event) {
+$(".star").on("click", function(event){
+    let display = $(this).attr("style");
+    if (display === "none") {
+        $(this).attr("style", "inline-block");
+    }
+    else {
+        $(this).attr("style", "none");
+    }
+})
+
+$("#gifSearch").on("click", function (event) {
     event.preventDefault();
-    let search = $("#searchbox").val();
+    let search = $("#searchBox").val();
     topic.push(search);
     addButton();
 })
+
+function clicked(topicChange){
+    topic = topicChange;
+    addButton();
+}
+
+addButton();
         /* giphy notes 
 
         Add to API URL to get random gifs

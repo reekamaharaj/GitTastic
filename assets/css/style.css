@@ -21,6 +21,8 @@ button:hover {
     background-color: lightcoral;
 }
 
+
+
 ul {
     list-style-type: none;
     overflow: hidden;
@@ -61,7 +63,7 @@ a:hover {
     
 }
 
-#searchbox {
+#searchBox {
     margin-top: 10px;
     text-align: center;
     position: relative;
@@ -73,14 +75,12 @@ a:hover {
 
 }
 
-#gifsearch {
+#gifSearch {
     width: 40px;
     height: 36px;
-    border: 1px solid #582A72;
     background: #582A72;
     text-align: center;
     color: #ffffff;
-    border-radius: 5px;
     cursor: pointer;
     font-size: medium;
 }
@@ -95,52 +95,149 @@ a:hover {
 }
 
 .gifImg {
+    padding: 5px;
     margin: 5px;
+    width: 100%;
+    height: auto;
 }
 
 /* Large screens, Desktops */
 @media screen and (max-width: 980px) {
+    *{
+        align-items: center;
+    }
+
+    ul,li, #right, #left {
+        text-align: center;
+    }
+    
+    nav {
+        font-size: .75rem;
+    }
+
+    button {
+        font-size: .75rem;
+        padding: 5px;
+    }
+
+    #searchBox, #gifSearch {
+        font-size: 0.75rem;
+    }
+
+    .container {
+        border: none;
+        font-size: 0.75rem;
+        align-items: center;
+    }
+
+    #gifContainer {
+        flex: wrap;
+        border:none;
+        padding: 2px;
+        margin: 2px;
+    }
+    
+    .gifImg {
+        padding: 2px;
+        margin: 2px;
+    }
 
 }
 
 /* Medium screens, tablets */
 @media screen and (max-width: 768px){
+    *{
+        align-items: center;
+    }
+
+    ul,li, #right, #left {
+        text-align: center;
+    }
+    
+    nav {
+        font-size: .75rem;
+    }
+
+    button {
+        font-size: .75rem;
+        padding: 5px;
+    }
+
+    #searchBox, #gifSearch {
+        font-size: 0.75rem;
+    }
+
+    .container {
+        border: none;
+        font-size: 0.75rem;
+        align-items: center;
+    }
+
+    #gifContainer {
+        flex: wrap;
+        border:none;
+        padding: 2px;
+        margin: 2px;
+    }
+    
+    .gifImg {
+        padding: 2px;
+        margin: 2px;
+    }
 
 }
 
 /* Small screens, phones */
 @media screen and (max-width: 640px){
-    h1 {
-        margin: 0;
-        padding: 20px 10px 20px 10px;
+    *{
+        align-items: center;
     }
 
-    header {
-        display: inline;
+    ul,li, #right, #left {
+        float: none;
+        text-align: center;
+        font-size: 0.75rem;
+        padding: 3px 0px 3px 0px;
+    }
+    
+    nav {
+        font-size: .75rem;
     }
 
-    img {
-        width: 100%;
+    button {
+        font-size: .75rem;
+        padding: 5px;
     }
 
-    ul {
-        flex-direction: column;
+    #searchBox, #gifSearch {
+        font-size: 0.75rem;
+        padding: 3px;
+        margin: 0px;
     }
 
-    li {
-        margin: 0;
+    input {
+        padding: 0px;
+        margin: 0px;
     }
 
-    a{
-        display: block;
-    }
     .container {
-        margin-left: auto;
-        margin-right: auto;
+        border: none;
+        font-size: 0.75rem;
+        padding: 10px;
+        margin: 0px;
+        align-items: center;
     }
 
-    #gifcontainer {
+    #gifContainer {
         display: inline;
+        border:none;
+
+    }
+    
+    .gifImg {
+        width: 50%;
+        height: auto;
+
     }
 
 }
