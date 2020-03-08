@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-button {
+.gif {
     padding: 10px;
     background: #582A72;
     text-align: center;
@@ -18,10 +18,19 @@ button {
 }
 
 button:hover {
-    background-color: lightcoral;
+    background-color: plum;
 }
 
-
+i {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    font-size: medium;
+}
 
 ul {
     list-style-type: none;
@@ -44,6 +53,10 @@ a:hover {
     color: lightblue;
 }
 
+p {
+    margin: -5px 0 0 0;
+}
+
 #right {
     float: right;
 }
@@ -55,11 +68,9 @@ a:hover {
 #gifContainer {
     margin: 15px;
     padding: 5px;
-    border: 1.5px solid #3A005A;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    border-radius: 5px;
     
 }
 
@@ -96,9 +107,18 @@ a:hover {
 
 .gifImg {
     padding: 5px;
-    margin: 5px;
-    width: 100%;
+    margin: 0 5px 0 5px;
+    max-width: 500px;
     height: auto;
+}
+
+.title {
+    font-size: small;
+}
+
+.rating {
+    font-weight: bold;
+    margin-top: 2px;
 }
 
 /* Large screens, Desktops */
@@ -141,7 +161,6 @@ a:hover {
         padding: 2px;
         margin: 2px;
     }
-
 }
 
 /* Medium screens, tablets */
