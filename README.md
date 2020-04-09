@@ -16,7 +16,7 @@ The user can use the input box to add a new button to the page. The user can als
 - HTML
 - CSS
 - Jquery
-- Visual Studios
+- Visual Studio
 - Giphy API
 
 ## Role in Development
